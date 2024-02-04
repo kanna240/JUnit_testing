@@ -19,22 +19,22 @@ public class MathUtilsTest {
 
     @Test
     public void testAdd() {
-        assertEquals(4, mathUtils.add(2, 2));
+        assertEquals(8, mathUtils.add(2, 6));
     }
 
     @Test
     public void testSubtract() {
-        assertEquals(3, mathUtils.subtract(5, 2));
+        assertEquals(1, mathUtils.subtract(5, 4));
     }
 
     @Test
     public void testMultiply() {
-        assertEquals(10, mathUtils.multiply(2, 5));
+        assertEquals(25, mathUtils.multiply(5, 5));
     }
 
     @Test
     public void testDivide() {
-        assertEquals(2.0, mathUtils.divide(10, 5), 0.0);
-        assertEquals(-1.0, mathUtils.divide(10, 0), 0.0);
+        assertEquals(3.0, mathUtils.divide(9, 3), 0.0);
+        assertEquals(-1.0, mathUtils.divide(9, 0), 0.0);
     }
 }
